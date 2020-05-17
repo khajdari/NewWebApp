@@ -9,8 +9,24 @@
 <title>Octagon</title>
 </head>
 <body bgcolor="FEF9E7">
+
+<%
+
+	try {
+
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://ccp6418db.c0jtagmpdqil.us-east-1.rds.amazonaws.com:3306/ccp6418database", "ccp6418user", "ccp6418pass");
+		Statement st = conn.createStatement();
+		st.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('Octagon', NOW())");
+		out.println("Octagon visit is successfully logged!");
+	} catch (Exception e) {
+		out.println("Octagon visit log failed!");
+		e.printStackTrace();
+	}
+%>
+
 <font face="verdana">
-	<h1>Welcome ccp6418 user! This is a new shape, Red Octagon</h1>
+	<h1>Hello!</h1>
 
 	<p>
 	<p>This is a <font color="red">Red Octagon</font>.
