@@ -10,7 +10,7 @@
 </head>
 <body bgcolor="FEF9E7">
 <font face="verdana">
-	<h1>Hello!</h1>
+	<h1>Welcome ccp6418 user! This is a new shape, Red Parallelogram</h1>
 
 	<p>
 	<p>This is a <font color="red">Red Parallelogram</font>.
