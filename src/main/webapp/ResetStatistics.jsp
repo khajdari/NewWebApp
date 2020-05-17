@@ -15,7 +15,7 @@
 <p>
 <p>
     <font face="verdana" color="green">
-        <h1>Hello!</h1>
+        <h1>Reset Statistics</h1>
 <p>
 <%
     try {
